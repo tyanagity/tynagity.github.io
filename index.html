@@ -1,0 +1,35 @@
+---
+layout: default
+title: ホーム
+---
+
+<div class="posts">
+    <h2>記事一覧</h2>
+    
+    {% if site.posts.size > 0 %}
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li class="post-list-item">
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%m月%d日" }}</time>
+            
+            {% if post.tags %}
+            <div class="tags">
+                {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            {% if post.excerpt %}
+            <div class="excerpt">
+                {{ post.excerpt | strip_html | truncatewords: 50 }}
+            </div>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>まだ記事がありません。</p>
+    {% endif %}
+</div>

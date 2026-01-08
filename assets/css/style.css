@@ -1,0 +1,194 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header h1 a {
+    color: #333;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #0066cc;
+}
+
+header p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+main {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Post list */
+.post-list {
+    list-style: none;
+}
+
+.post-list-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.post-list-item:last-child {
+    border-bottom: none;
+}
+
+.post-list-item h2 {
+    margin-bottom: 10px;
+}
+
+.post-list-item h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-list-item h2 a:hover {
+    color: #0066cc;
+}
+
+.post-list-item time {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.post-list-item .excerpt {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Post page */
+.post-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.post-header h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.post-header time {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.post-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.post-content p {
+    margin-bottom: 15px;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.post-content code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+.post-content pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+.post-content pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Tags */
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+/* Post navigation */
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.post-navigation a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.post-navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Math styling */
+.MathJax {
+    font-size: 1.1em;
+}
