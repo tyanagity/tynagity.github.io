@@ -40,6 +40,25 @@
     </ul>
   </div>
     
+  <!-- Recent Posts (4件) -->
+  {% if site.posts.size > 0 %}
+  <div class="sidebar-recent-posts" style="margin-top: 2em; padding-top: 1em; border-top: 1px solid #eee;">
+    <h4 style="margin-bottom: 0.5em;">Recent Posts</h4>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      {% for post in site.posts limit:4 %}
+        <li style="margin-bottom: 0.5em;">
+          <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #555;">
+            {{ post.title }}
+          </a>
+          <span style="display: block; font-size: 0.75em; color: #999;">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
   <!-- カスタム: タグ一覧 (Homeのみ表示、または常時表示) -->
   {% if site.tags.size > 0 %}
   <div class="sidebar-tags" style="margin-top: 2em; padding-top: 1em; border-top: 1px solid #eee;">
